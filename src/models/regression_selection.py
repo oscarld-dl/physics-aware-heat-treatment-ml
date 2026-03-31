@@ -35,13 +35,18 @@ from sklearn.svm import SVR
 from sklearn.tree import DecisionTreeRegressor
 
 
-def multioutput_r2(y_true: np.ndarray, y_pred: np.ndarray) -> float:
+def multioutput_r2(y_true, y_pred) -> float:
     """Mean R² across output columns."""
-    return float(np.mean([r2_score(y_true[:, i], y_pred[:, i]) for i in range(y_true.shape[1])]))
+    y_true = np.asarray(y_true)
+    y_pred = np.asarray(y_pred)
+
+    return float(np.mean([
+        r2_score(y_true[:, i], y_pred[:, i])
+        for i in range(y_true.shape[1])
+    ]))
 
 
 CUSTOM_SCORER = make_scorer(multioutput_r2, greater_is_better=True)
-
 
 @dataclass
 class DatasetSplit:
