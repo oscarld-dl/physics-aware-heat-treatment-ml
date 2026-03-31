@@ -1,4 +1,4 @@
-# physics-aware-heat-treatment-ml
+# Causal and Physics-aware Data-Driven Framework for Optimizing Gear Heat Treatment processes.
 
 Data-driven and physics-aware modeling of steel heat treatment, with a focus on quenching, phase transformation, and causal constraints.
 
