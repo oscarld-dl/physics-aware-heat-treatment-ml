@@ -14,8 +14,9 @@ This repository rebuilds and extends a prior thesis workflow into a clean, repro
 
 ## Structure
 - `src/` reusable Python code
-- `notebooks/` exploratory notebooks
-- `data/` raw and processed data
+- `scripts/` runnable task scripts for loading data, training models, and reproducing experiments
+- `notebooks/` exploratory analysis and visualizations
+- `data/` raw and external, and process data.
 - `configs/` experiment settings
 - `tests/` validation tests
 - `docs/` project notes and methodology
