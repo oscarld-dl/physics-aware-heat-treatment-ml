@@ -15,10 +15,10 @@ Thumbs.db
 
 # Data / outputs
 data/processed/
-results/
-outputs/
-models/
-checkpoints/
+/results/
+/outputs/
+/models/
+/checkpoints/
 *.h5
 *.keras
 *.pkl
@@ -31,3 +31,4 @@ checkpoints/
 
 # Env files
 .env
+
